@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Pages from './pages/Pages';
+import Category from './components/Category';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1>Tasty</h1>
+      <Category />
+      <Pages />
     </div>
   );
 }
 
 export default App;
+
+// api_key = 9ecffcada173472c9f97ac07405fadb7
