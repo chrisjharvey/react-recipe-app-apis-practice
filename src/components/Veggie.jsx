@@ -39,6 +39,9 @@ function Veggie() {
               640: {
                 perPage: 1,
               },
+              768: {
+                perPage: 2,
+              },
             },
             arrows: false,
             pagination: false,
