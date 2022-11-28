@@ -25,7 +25,7 @@ function Search() {
   );
 }
 const FormStyle = styled.form`
-  margin: 0rem 20rem;
+  margin: 4rem 20rem 0 20rem;
   div {
     min-width: 100%;
     position: relative;

@@ -18,9 +18,9 @@ function Category() {
         <GiNoodles />
         <h4>Thai</h4>
       </SLink>
-      <SLink to={'/cuisine/Japanese'}>
+      <SLink to={'/cuisine/Chinese'}>
         <GiChopsticks />
-        <h4>Japanese</h4>
+        <h4>Chinese</h4>
       </SLink>
     </List>
   );
@@ -53,6 +53,9 @@ const SLink = styled(NavLink)`
   svg {
     color: white;
     font-size: 1.5rem;
+  }
+  :hover {
+    background: linear-gradient(to right, #f27121, #e94057);
   }
   &.active {
     background: linear-gradient(to right, #f27121, #e94057);
