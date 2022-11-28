@@ -5,7 +5,7 @@ import '@splidejs/react-splide/css';
 import { Link } from 'react-router-dom';
 
 function Veggie() {
-  //variable to set recipes
+  
   const [veggie, setVeggie] = useState([]);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ function Veggie() {
         `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9&tags=vegetarian`
       );
       const data = await api.json();
-      //save array in setpopular variable
+     
       localStorage.setItem('veggie', JSON.stringify(data.recipes));
       setVeggie(data.recipes);
       console.log(data.recipes);
