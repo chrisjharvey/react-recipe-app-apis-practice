@@ -46,14 +46,17 @@ const Card = styled.div`
   img {
     width: 100%;
     border-radius: 2rem;
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.2s ease-in;
+    }
   }
 
   a {
     text-decoration: none;
   }
   h4 {
-    text-align: center;
-    padding: 1rem;
+    text-align: left;
   }
 `;
 

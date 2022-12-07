@@ -25,9 +25,11 @@ function Search() {
   );
 }
 const FormStyle = styled.form`
-  margin: 4rem 20rem 0 20rem;
+  margin: 0 10rem 0 10rem;
+  @media (max-width: 1024px) {
+    margin: 0 0rem 0 0rem;
+  }
   div {
-    min-width: 100%;
     position: relative;
   }
   input {

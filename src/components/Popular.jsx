@@ -37,6 +37,9 @@ function Popular() {
           options={{
             perPage: 4,
             breakpoints: {
+              1024: {
+                perPage: 2,
+              },
               640: {
                 perPage: 1,
               },
@@ -44,7 +47,7 @@ function Popular() {
             arrows: false,
             pagination: false,
             drag: 'free',
-            gap: '3rem',
+            gap: '1.5rem',
           }}
         >
           {popular.map((recipe) => {

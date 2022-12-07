@@ -5,7 +5,6 @@ import '@splidejs/react-splide/css';
 import { Link } from 'react-router-dom';
 
 function Veggie() {
-  
   const [veggie, setVeggie] = useState([]);
 
   useEffect(() => {
@@ -22,7 +21,7 @@ function Veggie() {
         `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9&tags=vegetarian`
       );
       const data = await api.json();
-     
+
       localStorage.setItem('veggie', JSON.stringify(data.recipes));
       setVeggie(data.recipes);
       console.log(data.recipes);
@@ -47,7 +46,7 @@ function Veggie() {
             arrows: false,
             pagination: false,
             drag: 'free',
-            gap: '3rem',
+            gap: '1.5rem',
           }}
         >
           {veggie.map((recipe) => {

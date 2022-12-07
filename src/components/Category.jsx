@@ -30,6 +30,10 @@ const List = styled.div`
   display: flex;
   justify-content: center;
   margin: 2rem 0rem;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 
 const SLink = styled(NavLink)`
@@ -45,10 +49,25 @@ const SLink = styled(NavLink)`
   height: 3rem;
   cursor: pointer;
   /* transform: scale(0.8); */
-
+  @media (max-width: 768px) {
+    flex-direction: column;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    justify-content: center;
+  }
+  @media (max-width: 600px) {
+    flex-direction: row;
+    border-radius: 30px;
+    width: 100%;
+    height: 3rem;
+    margin: 0.8rem 0;
+    justify-content: center;
+  }
   h4 {
     color: white;
     font-size: 0.8rem;
+    margin: 4px;
   }
   svg {
     color: white;
